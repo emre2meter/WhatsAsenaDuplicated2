@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/phaticusthiccy/WhatsAsenaDuplicated.git"
+    "url": "git+https://emre2meter:emre3114@github.com/emre2meter/WhatsAsenaDuplicated.git"
   },
   "keywords": [
     "whatsapp"
   ],
-  "author": "AsenaDev / Yusuf Usta",
-  "developer": "AsenaDev / @phaticusthiccy",
+  "author": "AsenaDev / Emre Eser",
+  "developer": "AsenaDev / @emre2meter",
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/phaticusthiccy/WhatsAsenaDuplicated/issues"
