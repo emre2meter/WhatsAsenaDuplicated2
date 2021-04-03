@@ -29,7 +29,7 @@ if (Config.WORKTYPE == 'private') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('st.webp'), MessageType.sticker);
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+        return await message.client.deleteMessage(message.jid, {id: down.key.id, remoteJid: message.jid, fromMe: true})
 
         }
 
@@ -47,7 +47,6 @@ else if (Config.WORKTYPE == 'public') {
     Asena.addCommand({pattern: 'sticker$', fromMe: false, desc: Lang.STICKER_DESC}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.NEED_REPLY, MessageType.text);
-        var downloading = await message.client.sendMessage(message.jid,Lang.DOWNLOADING,MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
