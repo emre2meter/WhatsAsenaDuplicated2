@@ -12,18 +12,18 @@
             "WARN": "Uyarı"
         },
         "_plugin": {
-            "INSTALL_DESC": "Plugin yükler.\n⌨️ Örnek: .install https://gist.github.com/phaticusthiccy/d41dd4428faf34ab8cfd4c392501c62e",
+            "INSTALL_DESC": "Plugin yükler.\n⌨️ Örnek: .install https://gist.github.com",
             "NEED_URL": "Lütfen bir URL giriniz! Örnek:",
             "INVALID_URL": "```Lütfen bir geçerli URL giriniz!```",
             "INVALID_PLUGIN": "*❌ Plugininiz hatalı!*\n*Hata:*",
-            "INSTALLED": "*✅ Plugin başarılı bir şekilde yüklendi!*",
+            "INSTALLED": "*✅ Eklenti başarılı bir şekilde yüklendi!*",
             "PLUGIN_DESC": "Yüklediğiniz pluginleri gösterir.",
-            "INSTALLED_FROM_REMOTE": "*Dışarıdan yüklediğiniz pluginler:*\n",
+            "INSTALLED_FROM_REMOTE": "*Dışarıdan yüklediğiniz Eklentiler:*\n",
             "NO_PLUGIN": "*Dışarıdan hiç plugin yüklememişsiniz!*",
             "REMOVE_DESC": "Plugin kaldırır.",
             "NEED_PLUGIN": "```Lütfen bir Plugin giriniz! Örnek: .plugin test```",
             "NOT_FOUND_PLUGIN": "```Böyle bir plugin belki yüklediniz, belki de yüklemediniz. Ama şu an olmadığı kesin.```",
-            "DELETED": "*✅ Modül başarıyla silindi!*"
+            "DELETED": "*✅ Eklenti başarıyla silindi!*"
         },
         "admin": {
             "BAN_DESC": "Gruptan kişi banlar. Yanıt verin ya da komutun yanına kişiyi etiketleyin.",
@@ -33,7 +33,6 @@
             "ADD_DESC": "Gruba kişi ekler.\n⌨️ Örnek: .add 9055xxxxxxxx",
             "ADDED": "Gruba Eklendi!",
             "ALREADY_PROMOTED": "```Zaten admin olan birisini nasıl admin yapayım?```",
-            "PROMOTED": "```, Admin Yapıldı!```",
             "PROMOTE_DESC": "Herhangi bir kişiyi admin yapar.",
             "DEMOTE_DESC": "Herhangi bir adminden yetkisini düşürür.",
             "ALREADY_NOT_ADMIN": "```Zaten admin olmayan birisini nasıl yetkisini alayım?```",
