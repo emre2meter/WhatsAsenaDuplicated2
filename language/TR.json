@@ -19,7 +19,7 @@
             "INSTALLED": "*✅ Eklenti başarılı bir şekilde yüklendi!*",
             "PLUGIN_DESC": "Yüklediğiniz pluginleri gösterir.",
             "INSTALLED_FROM_REMOTE": "*Dışarıdan yüklediğiniz Eklentiler:*\n",
-            "NO_PLUGIN": "*Dışarıdan hiç plugin yüklememişsiniz!*",
+            "NO_PLUGIN": "*Dışarıdan hiç eklenti yüklememişsiniz!*",
             "REMOVE_DESC": "Plugin kaldırır.",
             "NEED_PLUGIN": "```Lütfen bir Plugin giriniz! Örnek: .plugin test```",
             "NOT_FOUND_PLUGIN": "```Böyle bir plugin belki yüklediniz, belki de yüklemediniz. Ama şu an olmadığı kesin.```",
@@ -34,6 +34,7 @@
             "ADDED": "Gruba Eklendi!",
             "ALREADY_PROMOTED": "```Zaten admin olan birisini nasıl admin yapayım?```",
             "PROMOTE_DESC": "Herhangi bir kişiyi admin yapar.",
+            "PROMOTED": "```, Admin Yapıldı!```",
             "DEMOTE_DESC": "Herhangi bir adminden yetkisini düşürür.",
             "ALREADY_NOT_ADMIN": "```Zaten admin olmayan birisini nasıl yetkisini alayım?```",
             "DEMOTED": "```, Yetkisi Düşürüldü!```",
@@ -72,9 +73,9 @@
             "MUST_TEXT": "```Lütfen herhangi bir mesajı yanıtlayın```"
         },
         "heroku": {
-            "RESTART_DESC": "WhatsAsena'yı yeniden başlatın",
+            "RESTART_DESC": "Lamer'ı yeniden başlatın",
             "RESTART_MSG": "```Yeniden Başlatılıyor...```",
-            "SHUTDOWN_DESC": "WhatsAsena'yı kapatır.",
+            "SHUTDOWN_DESC": "Lamer'ı kapatır.",
             "SHUTDOWN_MSG": "*Belki birgün tekrar görüşebiliriz..\nHoşcakal Sahip..*\n```Asena Kapatılıyor... ⛔```",
             "DYNO_DESC": "Heroku dyno kullanımını kontrol edin",
             "DYNO_TOTAL": "```Toplam Kota```",
@@ -212,7 +213,7 @@
             "INVALID_HEROKU": "*❌ Heroku bilgileriniz yanlış!*",
             "UPDATED": "*✅ Güncelleme başarılı oldu!*",
             "UPDATED_LOCAL": "*✅ Güncelleme başarılı oldu!*",
-            "AFTER_UPDATE": "*💬 WhatsAsena Yeniden Başlatılıyor*"
+            "AFTER_UPDATE": "*💬Lamer Yeniden Başlatılıyor*"
         },
         "weather": {
             "WEATHER_DESC": "Hava durumu getirir.\n⌨️ Örnek: .weather bakü",
@@ -390,7 +391,7 @@
             "NOT_FOUND": "Aradığınız komuta benzer başka bir komut bulamadık..",
             "FOUND": "*Aradığınız komut bulunamadı, benzeyen komutlar:* \n 🔎 ```",
             "SEARCHING": "🔎 Komut bulunamadı.. Benzer komutlar aranıyor..",
-            "NEW_UPDATE": "Bot için yeni güncelleme mevcut!"
+            "NEW_UPDATE": "Lamer için yeni güncelleme mevcut!"
         },
         "notes": {
             "NOTES_USAGE": "Varolan tüm notlarınızı gösterir.",
