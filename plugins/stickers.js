@@ -29,6 +29,7 @@ if (Config.WORKTYPE == 'private') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('st.webp'), MessageType.sticker);
             });
+
         }
 
         ffmpeg(location)
@@ -38,6 +39,7 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('sticker.webp'), MessageType.sticker);
             });
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 }
 else if (Config.WORKTYPE == 'public') {
