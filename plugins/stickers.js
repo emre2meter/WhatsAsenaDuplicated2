@@ -40,6 +40,7 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('sticker.webp'), MessageType.sticker);
             });
+        return await message.client.deleteMessage
     }));
 }
 else if (Config.WORKTYPE == 'public') {
