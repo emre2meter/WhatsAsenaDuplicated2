@@ -6,7 +6,7 @@ you may not use this file except in compliance with the License.
 WhatsAsena - Yusuf Usta
 */
 
-const {MessageType, GroupSettingChange} = require('@adiwajshing/baileys');
+const {MessageType, GroupSettingChange, Mimetype} = require('@adiwajshing/baileys');
 const Asena = require('../events');
 const Config = require('../config');
 const fs = require('fs');
