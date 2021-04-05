@@ -1,17 +1,9 @@
-/* Copyright (C) 2020 Yusuf Usta.
-
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-
-WhatsAsena - Yusuf Usta
-Developer & Co-Founder - Phaticusthiccy
-*/
-
 const Asena = require('../events');
-const {MessageType} = require('@adiwajshing/baileys');
+const {MessageType, Mimetype} = require('@adiwajshing/baileys');
 const {spawnSync} = require('child_process');
 const Config = require('../config');
 const chalk = require('chalk');
+const fs = require('fs');
 
 const Language = require('../language');
 const Lang = Language.getString('system_stats');
@@ -22,7 +14,7 @@ if (Config.WORKTYPE == 'private') {
     Asena.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
-            await message.client.sendMessage(message.jid,'```Güzellik Tanrıçası Senem Hizmetinde!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```'+Config.BRANCH+'```', MessageType.text);
+            await message.client.sendMessage(message.jid, fs.readFileSync("/root/WhatsAsenaDuplicated1/media/gif/alive.mp4"),MessageType.video, { mimetype: Mimetype.gif, caption: '_CALYPSO *Atlas* Çalışıyor_\n\n```insta:``` *emre2meter*\n\n```Branch:``` *Owner*\nCalypso Version 0.2.0'})
         }
         else {
             await message.client.sendMessage(message.jid,Config.ALIVEMSG + '\n*Powered by WhatsAsena*', MessageType.text);
