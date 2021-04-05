@@ -51,7 +51,7 @@ if (Config.WORKTYPE == 'private') {
 
                 var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
 
-                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Made by WhatsAsena'})
+                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.jpg})
 
             });
 
@@ -82,7 +82,7 @@ if (Config.WORKTYPE == 'private') {
 
                 var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
 
-                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Made by WhatsAsena'})
+                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.jpg})
 
             });
 
@@ -113,7 +113,7 @@ if (Config.WORKTYPE == 'private') {
 
                 var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
 
-                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Made by WhatsAsena'})
+                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.jpg})
 
             });
 
@@ -157,7 +157,7 @@ if (Config.WORKTYPE == 'private') {
 
                 var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
 
-                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Made by WhatsAsena'})
+                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.jpg})
 
             });
 
@@ -205,7 +205,7 @@ if (Config.WORKTYPE == 'private') {
 
         var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
 
-        await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Made by WhatsAsena'})
+        await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.jpg})
 
     }));
 
@@ -306,7 +306,7 @@ if (Config.WORKTYPE == 'private') {
 
                 var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
 
-                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Made by WhatsAsena'})
+                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.jpg})
 
             });
 
