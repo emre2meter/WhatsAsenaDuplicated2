@@ -37,8 +37,8 @@ Asena.addCommand({pattern: 'ban ?(.*)', fromMe: true, onlyGroup: true, desc: Lan
             var etiketler = '';
             message.mention.map(async (user) => {
                 etiketler += '@' + user.split('@')[0];
-    }
-    else {
+    
+     } else {
         if (message.reply_message !== false) {
             await message.client.sendMessage(message.jid,'@' + message.reply_message.data.participant.split('@')[0] + Config.BANMSG, MessageType.text, {contextInfo: {mentionedJid: [message.reply_message.data.participant]}});
             await message.client.groupRemove(message.jid, [message.reply_message.data.participant]);
