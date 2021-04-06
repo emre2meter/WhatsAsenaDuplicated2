@@ -31,12 +31,9 @@ Asena.addCommand({pattern: 'ban ?(.*)', fromMe: true, onlyGroup: true, desc: Lan
                 etiketler += '@' + user.split('@')[0];
             });
 
-            var etiketler = '';
-            message.mention.map(async (user) => {
-                etiketler += '@' + user.split('@')[0];
             await message.client.sendMessage(message.jid, fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/giphy_3.mp4"),MessageType.video, { mimetype: Mimetype.gif, caption: 'Founder Tarafından Banlandın!'})
             await message.client.sendMessage(message.jid,Lang.BANNED + etiketler, MessageType.text, {contextInfo: {mentionedJid: message.mention}});
-            await message.client.groupRemove(message.jid, [message.reply_message.data.participant]);
+            await message.client.groupRemove(message.jid, message.mention);
         } else {
             return await message.client.sendMessage(message.jid,Lang.GIVE_ME_USER,MessageType.text);
         }
