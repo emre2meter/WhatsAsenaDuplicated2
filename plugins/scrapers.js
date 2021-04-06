@@ -1,11 +1,3 @@
-/* Copyright (C) 2020 Yusuf Usta.
-
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-
-WhatsAsena - Yusuf Usta
-*/
-
 const Asena = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const translatte = require('translatte');
@@ -235,7 +227,7 @@ if (config.WORKTYPE == 'private') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);
         gis(match[1], async (error, result) => {
-            for (var i = 0; i < (result.length < 5 ? result.length : 5); i++) {
+            for (var i = 0; i < (result.length < 1 ? result.length : 1); i++) {
                 var get = got(result[i].url, {https: {rejectUnauthorized: false}});
                 var stream = get.buffer();
                 
@@ -244,7 +236,7 @@ if (config.WORKTYPE == 'private') {
                 });
             }
 
-            message.reply(Lang.IMG.format((result.length < 5 ? result.length : 5), match[1]));
+            message.reply(Lang.IMG.format((result.length < 1 ? result.length : 1), match[1]));
         });
     }));
 
