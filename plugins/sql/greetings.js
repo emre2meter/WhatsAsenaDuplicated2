@@ -66,8 +66,6 @@ module.exports = {
 
 
 
-            await message.client.sendMessage(message.jid, fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/giphy_3.mp4"),MessageType.video, { mimetype: Mimetype.gif
-
 
 
 
