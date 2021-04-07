@@ -28,7 +28,6 @@ Asena.addCommand({pattern: 'addlydia$', fromMe: true, dontAddCommandList: true, 
         }
     }
 
-    return await message.reply(Lang.ENABLED_LYDIA);
 }));
 
 Asena.addCommand({pattern: 'rmlydia$', fromMe: true, dontAddCommandList: true, desc: Lang.RMLYDIA_DESC}, (async (message, match) => {
@@ -57,7 +56,6 @@ Asena.addCommand({pattern: 'rmlydia$', fromMe: true, dontAddCommandList: true, d
         }
     }
 
-    return await message.reply(Lang.DISABLED);
 }));
 
 Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {   
