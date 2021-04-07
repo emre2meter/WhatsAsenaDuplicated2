@@ -367,11 +367,15 @@
         },
         "ttp": {
             "TTP_DESC": "Yazıyı sade resme dönüştürür.",
+            "LOVETTP_DESC": "Yazıyı kalpli resme yazar.",
             "ATTP_DESC": "Yazıyı renkli stickera dönüştürür.",
+            "PUBGTTP_DESC": "Yazıyı PUBG afişine yazar.",
+            "NARUTOTTP_DESC": "Yazıyı Naruto Posterine yazar.",
             "NEED_WORD": "*Kelime Girmelisin!*",
             "ANIME_DESC": "Yazıyı anime kızının tuttuğu pankartın içine yazar.",
             "TRUMP_DESC": "Yazıyı trump’ın tweetine çevirir.",
             "CHANGE_DESC": "Yazıyı change my mind posterine çevirir.",
+            "CLYDE_DESC": Yazıyı ClydeBot mesajına çevirir.",
             "GLOW_DESC": "Yazıyı neon resme dönüştürür."
         },
         "wallpaper": {
