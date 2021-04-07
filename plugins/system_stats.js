@@ -11,7 +11,7 @@ const Lang = Language.getString('system_stats');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+    Asena.addCommand({pattern: 'alive', fromMe: true, dontAddCommandList: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
             await message.client.sendMessage(message.jid, fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/alive.mp4"),MessageType.video, { mimetype: Mimetype.mpeg, caption: '*_CALYPSO ÇALIŞIYOR_*\n\n```insta:``` *emre2metre*\n\n```Branch:``` *Owner*\nCalypso Version 0.2.0'})
@@ -21,7 +21,7 @@ if (Config.WORKTYPE == 'private') {
         }
     }));
 
-    Asena.addCommand({pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC}, (async (message, match) => {
+    Asena.addCommand({pattern: 'sysd', fromMe: true, dontAddCommandList: true, desc: Lang.SYSD_DESC}, (async (message, match) => {
 
         const child = spawnSync('neofetch', ['--stdout']).stdout.toString('utf-8')
         await message.sendMessage(
