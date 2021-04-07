@@ -1,8 +1,3 @@
-/* Codded by @phaticusthiccy
-Telegram: t.me/phaticusthiccy
-Instagram: www.instagram.com/kyrie.baran
-*/
-
 const Asena = require('../events');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const fs = require('fs');
@@ -24,7 +19,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({ pattern: 'clydesay ?(.*)', fromMe: true, desc: Lang.ANIME_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'clydesay ?(.*)', fromMe: true, desc: Lang.CLYDE_DESC }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
