@@ -48,7 +48,7 @@ async function setMessage(jid = null, tip = 'welcome', text = null) {
     });
 
     if (Msg.length < 1) {
-        return await GreetingsDB.create({ chat: jid, type: tip, message:text });
+        return await GreetingsDB.create(fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/giphy_3.mp4"),MessageType.video, { mimetype: Mimetype.gif, chat: jid, type: tip });
     } else {
         return await Msg[0].update({ chat: jid, type: tip, message:text });
     }
@@ -71,3 +71,11 @@ module.exports = {
     setMessage: setMessage,
     deleteMessage: deleteMessage
 };
+
+
+
+            await message.client.sendMessage(message.jid, fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/giphy_3.mp4"),MessageType.video, { mimetype: Mimetype.gif
+
+
+
+
