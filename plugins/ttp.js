@@ -31,7 +31,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({ pattern: 'lovettp ?(.*)', fromMe: true, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'lovettp ?(.*)', fromMe: true, desc: Lang.LOVETTP_DESC }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -41,7 +41,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({ pattern: 'pubgttp ?(.*)', fromMe: true, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'pubgttp ?(.*)', fromMe: true, desc: Lang.PUBGTTP_DESC }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -51,7 +51,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({ pattern: 'narutottp ?(.*)', fromMe: true, desc: Lang.GLOW_DESC }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'narutottp ?(.*)', fromMe: true, desc: Lang.NARUTOTTP_DESC }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
