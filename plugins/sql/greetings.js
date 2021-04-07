@@ -1,11 +1,3 @@
-/* Copyright (C) 2020 Yusuf Usta.
-
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-
-WhatsAsena - Yusuf Usta
-*/
-
 const config = require('../../config');
 const { DataTypes } = require('sequelize');
 
@@ -48,7 +40,7 @@ async function setMessage(jid = null, tip = 'welcome', text = null) {
     });
 
     if (Msg.length < 1) {
-        return await GreetingsDB.create(fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/giphy_3.mp4"),MessageType.video, { mimetype: Mimetype.gif, chat: jid, type: tip });
+        return await GreetingsDB.create({ chat: jid, type: tip, message: text });
     } else {
         return await Msg[0].update({ chat: jid, type: tip, message:text });
     }
