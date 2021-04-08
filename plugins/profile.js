@@ -1,5 +1,5 @@
 const Asena = require('../events');
-const {MessageType} = require('@adiwajshing/baileys');
+const {MessageType, Mimetype} = require('@adiwajshing/baileys');
 const Config = require('../config');
 
 const fs = require('fs');
@@ -8,7 +8,7 @@ const Lang = Language.getString('profile');
 
 Asena.addCommand({pattern: 'kickme', fromMe: true, dontAddCommandList: true, desc: Lang.KICKME_DESC, onlyGroup: true}, (async (message, match) => {
     if (Config.KICKMEMSG == 'default') {
-        await message.client.sendMessage(message.jid, fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/solumintihar-20210402-0001.mp4"),MessageType.video, { mimetype: Mimetype.gif, caption: 'Bazen gitmen gerek. Bazen de sonunu göremediğin hikayeyi yaşamayı bırakman gerek..'})
+        await message.client.sendMessage(message.jid, fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/solumintihar-20210402-0001.mp4"),MessageType.video, { mimetype: Mimetype.mp4, caption: 'Bazen gitmen gerek. Bazen de sonunu göremediğin hikayeyi yaşamayı bırakman gerek..'})
         await message.client.groupLeave(message.jid);
     }
     else {
