@@ -8,7 +8,6 @@ const Lang = Language.getString('profile');
 
 Asena.addCommand({pattern: 'kickme', fromMe: true, dontAddCommandList: true, desc: Lang.KICKME_DESC, onlyGroup: true}, (async (message, match) => {
     if (Config.KICKMEMSG == 'default') { 
-        await message.client.sendMessage(message.jid,Lang.KICKME,MessageType.text);
         await message.client.groupLeave(message.jid);
     }
     else {
