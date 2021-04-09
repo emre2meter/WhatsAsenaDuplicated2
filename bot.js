@@ -261,7 +261,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                 
                 else {
 
-                    await conn.sendMessage(conn.user.jid, '*CALYPSO Private Olarak Çalışıyor!*\n\n_Lütfen burada plugin denemesi yapmayın. Burası sizin LOG numaranızdır._\n_Herhangi bir sohbette komutları deneyebilirsiniz :)_\n\n*Botunuz sadece size özel olarak çalışmaktadır. Değiştirmek için config vars üzerinden “WORK_TYPE” anahtarını “public” yapın.*\n\n*CALYPSO Kullandığın İçin Teşekkürler*', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/iblis.mp4"),MessageType.video, { mimetype: Mimetype.mp4, caption: '*ꪶ𝐈𝐁𝐋𝐈𝐒ꫂ〆⁷⁷⁷〆 Private Çalışıyor.*'});
 
                     await git.fetch();
                     var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
