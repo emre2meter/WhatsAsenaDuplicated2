@@ -14,7 +14,7 @@ if (Config.WORKTYPE == 'private') {
     Asena.addCommand({pattern: 'alive', fromMe: true, dontAddCommandList: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
-            await message.client.sendMessage(message.jid, fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/alive.mp4"),MessageType.video, { mimetype: Mimetype.mpeg, caption: '*_CALYPSO ÇALIŞIYOR_*\n\n```insta:``` *emre2metre*\n\n```Branch:``` *Owner*\nCalypso Version 0.2.0'})
+            await message.client.sendMessage(message.jid, fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/iblis.mp4"),MessageType.video, { mimetype: Mimetype.mp4, caption: '*_╬᭄ ⁷⁷⁷ꭘ𝐈𝐁𝐋𝐈𝐒⃤_*\n\n\nꪶ𝐈𝐁𝐋𝐈𝐒ꫂ 𝐄𝐌𝐑𝐄 〆⁷⁷⁷〆'})
         }
         else {
             await message.client.sendMessage(message.jid,Config.ALIVEMSG + '\n*Powered by WhatsAsena*', MessageType.text);
