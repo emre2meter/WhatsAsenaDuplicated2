@@ -428,7 +428,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
             // Hoşgeldin Mesajı
             var gb = await getMessage(msg.key.remoteJid);
             if (gb !== false) {
-                await conn.sendMessage(msg.key.remoteJid, gb.message, MessageType.text);
+                await conn.sendMessage(msg.key.remoteJid, fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/VID-20210401-WA0044.mp4"),MessageType.video, { mimetype: Mimetype.mp4, caption: 'WELCOME TO CEHENNET'})
             }
             return;
         }
