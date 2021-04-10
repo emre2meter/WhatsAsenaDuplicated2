@@ -235,8 +235,6 @@ if (config.WORKTYPE == 'private') {
                     await message.client.sendMessage(message.jid,image, MessageType.image);
                 });
             }
-
-            message.reply(Lang.IMG.format((result.length < 1 ? result.length : 1), match[1]));
         });
     }));
 
