@@ -261,7 +261,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                 
                 else {
 
-                    await conn.sendMessage(conn.user.jid, fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/iblis.mp4"),MessageType.video, { mimetype: Mimetype.mp4, caption: '*ꪶ𝐈𝐁𝐋𝐈𝐒ꫂ〆⁷⁷⁷〆 Private Çalışıyor.*'});
+                    await conn.sendMessage(conn.user.jid, fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/iblis.mp4"),MessageType.video, { mimetype: Mimetype.mp4, caption: '*╬᭄ ⁷⁷⁷ꭘ𝐈𝐁𝐋𝐈𝐒⃤*'});
 
                     await git.fetch();
                     var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
