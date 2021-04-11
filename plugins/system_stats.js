@@ -14,7 +14,7 @@ if (Config.WORKTYPE == 'private') {
     Asena.addCommand({pattern: 'alive', fromMe: true, dontAddCommandList: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
-            await message.client.sendMessage(message.jid, fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/iblis.mp4"),MessageType.video, { mimetype: Mimetype.mp4, caption: '*_╬᭄ ⁷⁷⁷ꭘ𝐈𝐁𝐋𝐈𝐒⃤_*\n\n\n〆𝐄𝐌𝐑𝐄〆¹⁹³'})
+            await message.client.sendMessage(message.jid, fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/VID-20210401-WA0044.mp4"),MessageType.video, { mimetype: Mimetype.mp4, caption: '```WhatsAsena Founder 〆𝐘𝐈𝐊𝐈𝐊〆¹⁹³ İçin Çalışıyor```\n\n```Version:``` v31.0\n```Branch:``` *Owner*\n\n\n_Delinse yer,çökse gök,yansa,kül olsa dört yan,_\n_Yüce dileğe doğru yine yürürüz yayan._\n_Yıldırımdan,tipiden,kasırgadan yılmayan,_\n_Ölümlerle eğlenen tunç yürekli Türkleriz.._'})
         }
         else {
             await message.client.sendMessage(message.jid,Config.ALIVEMSG + '\n*Powered by WhatsAsena*', MessageType.text);
