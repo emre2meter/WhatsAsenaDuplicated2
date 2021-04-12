@@ -39,7 +39,7 @@ if (ch.LANG === 'TR') {
 
         Asena.addCommand({pattern: 'n1', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
-            await message.sendMessage(" ▬▬▬.◙.▬▬▬\n ═▂▄▄▓▄▄▂\n◢◤ █▀▀████▄▄▄▄◢◤\n█▄▂█ █▄███▀▀▀▀▀▀▀╬\n◥█████◤\n══╩══╩═\n ╬═╬\n ╬═╬\n ╬═╬\n ╬═╬\n ╬═╬\n ╬═╬ ☻/\n ╬═╬/▌\n ╬═╬/  \");
+            await message.sendMessage(" ▬▬▬.◙.▬▬▬\n ═▂▄▄▓▄▄▂\n◢◤ █▀▀████▄▄▄▄◢◤\n█▄▂█ █▄███▀▀▀▀▀▀▀╬\n◥█████◤\n══╩══╩═\n ╬═╬\n ╬═╬\n ╬═╬\n ╬═╬\n ╬═╬\n ╬═╬ ☻/\n ╬═╬ /▌\n ╬═╬  LL");
 
         }));
 
