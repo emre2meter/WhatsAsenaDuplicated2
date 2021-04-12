@@ -1,7 +1,7 @@
 const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 
-Asena.addCommand({pattern: 'soru ?(.*)', fromMe: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'soru ?(.*)', fromMe: true, desc: 'Arkadaşlarınıza sorabileceğiniz güzel ve düşündürücü sorular.'}, (async (message, match) => {
 
     await message.client.sendMessage(message.jid, '@' + message.reply_message.jid.split('@')[0] + ' *İşte Sorun Geliyor..* 🤭 ', MessageType.text, {
         quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
@@ -130,7 +130,7 @@ await message.sendMessage(`${r_text[i]}`);
 
 }));
 
-Asena.addCommand({pattern: 'zorsoru ?(.*)', fromMe: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'zorsoru ?(.*)', fromMe: true, desc: 'Normalden daha zorlayıcı sorular için hazırlan!'}, (async (message, match) => {
 
     await message.client.sendMessage(message.jid, '@' + message.reply_message.jid.split('@')[0] + ' *Senin İçin En Zor Soruları Seçiyorum..* 😈 ', MessageType.text, {
         quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
@@ -224,7 +224,7 @@ await message.sendMessage(`${r_text[i]}`);
 
 }));
 
-Asena.addCommand({pattern: '18soru ?(.*)', fromMe: true}, (async (message, match) => {
+Asena.addCommand({pattern: '18soru ?(.*)', fromMe: true, desc: '+18 doğruluk soruları sorar'}, (async (message, match) => {
 
     await message.client.sendMessage(message.jid, '@' + message.reply_message.jid.split('@')[0] + ' 💋 *Hazır mısın* 👅 ', MessageType.text, {
         quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
@@ -307,7 +307,7 @@ await message.sendMessage(`${r_text[i]}`);
 
 }));
 
-Asena.addCommand({pattern: 'lgbtsoru ?(.*)', fromMe: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'lgbtsoru ?(.*)', fromMe: true, desc: 'LGBT konuları hakkında soru sorar.'}, (async (message, match) => {
 
     await message.client.sendMessage(message.jid, '@' + message.reply_message.jid.split('@')[0] + ' *Sorun Geliyor..* 🏳️‍🌈 ', MessageType.text, {
         quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
