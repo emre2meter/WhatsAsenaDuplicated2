@@ -2,7 +2,7 @@ const Asena = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const fs = require('fs');
 
-Asena.addCommand({pattern: 'lesmeter', fromMe: true, desc: 'Share Anyone\'s Lesbiannes!'}, (async (message, match) => {
+Asena.addCommand({pattern: 'lezmeter', fromMe: true, desc: 'Share Anyone\'s Lesbiannes!'}, (async (message, match) => {
 
     if (message.reply_message === false) return await message.sendMessage('```Need Reply!```');
 
@@ -120,7 +120,7 @@ r_text[100] = "%100";
 
     await message.client.sendMessage(
         message.jid, 
-        fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/giphy_2.mp4"),
+        fs.readFileSync("/root/WhatsAsenaDuplicated2/media/gif/giphy_2.mp4"),
         MessageType.video, 
         { mimetype: Mimetype.gif, caption: `Lez Yüzdesi Hesaplandı!* 👩‍❤️‍👩\n*Sonuç:* ${r_text[i]}` }
     )
