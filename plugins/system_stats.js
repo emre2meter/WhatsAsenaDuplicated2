@@ -14,10 +14,10 @@ if (Config.WORKTYPE == 'private') {
     Asena.addCommand({pattern: 'alive', fromMe: true, dontAddCommandList: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
-            await message.client.sendMessage(message.jid, fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/Yaşasın ırkımız dans eden kurt cCc auuuuuu auuu(360P).mp4"),MessageType.video, { mimetype: Mimetype.mp4, caption: '```WhatsAsena Founder 〆𝐘𝐈𝐊𝐈𝐊〆 İçin Çalışıyor```\n\n```Version:``` *v31.0*\n```Branch:``` *Owner*\n\n\n' + Config.ALIVEMSG})
+            await message.client.sendMessage(message.jid, fs.readFileSync("/root/WhatsAsenaDuplicated2/media/gif/Yaşasın ırkımız dans eden kurt cCc auuuuuu auuu(360P).mp4"),MessageType.video, { mimetype: Mimetype.mp4, caption: '```WhatsAsena Founder 〆𝐘𝐈𝐊𝐈𝐊〆 İçin Çalışıyor```\n\n```Version:``` *v31.0*\n```Branch:``` *Owner*\n\n\n' + Config.ALIVEMSG})
         }
         else {
-            await message.client.sendMessage(message.jid, fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/Yaşasın ırkımız dans eden kurt cCc auuuuuu auuu(360P).mp4"),MessageType.video, { mimetype: Mimetype.mp4, caption: '```WhatsAsena Founder 𝐘𝐈𝐊𝐈𝐊¹⁹³ İçin Çalışıyor```\n\n```Version:``` *v31.0*\n```Branch:``` *Owner*\n\n\n' + Config.ALIVEMSG});
+            await message.client.sendMessage(message.jid, fs.readFileSync("/root/WhatsAsenaDuplicated2/media/gif/Yaşasın ırkımız dans eden kurt cCc auuuuuu auuu(360P).mp4"),MessageType.video, { mimetype: Mimetype.mp4, caption: '```WhatsAsena Founder 𝐘𝐈𝐊𝐈𝐊¹⁹³ İçin Çalışıyor```\n\n```Version:``` *v31.0*\n```Branch:``` *Owner*\n\n\n' + Config.ALIVEMSG});
         }
     }));
 
