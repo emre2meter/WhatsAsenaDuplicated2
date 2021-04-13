@@ -2,16 +2,13 @@ const Asena = require('../events');
 const {MessageType, Mimetype} = require('@adiwajshing/baileys');
 const Config = require('../config');
 
-            await message.client.sendMessage(message.jid, fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/giphy_3.mp4"),MessageType.video, { mimetype: Mimetype.gif, contextInfo: {mentionedJid: [message.reply_message.data.participant]}, caption:   })
-
-
 const fs = require('fs');
 const Language = require('../language');
 const Lang = Language.getString('profile');
 
 Asena.addCommand({pattern: 'kickme', fromMe: true, dontAddCommandList: true, desc: Lang.KICKME_DESC, onlyGroup: true}, (async (message, match) => {
     if (Config.KICKMEMSG == 'default') {
-        await message.client.sendMessage(message.jid, fs.readFileSync("/root/WhatsAsenaDuplicated2/media/gif/solumintihar-20210402-0001.mp4"),MessageType.video, { mimetype: Mimetype.mp4, caption: 'Bazen gitmen gerek. Bazen de sonunu göremediğin hikayeyi yaşamayı bırakman gerek..'})
+        await message.client.sendMessage(message.jid, fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/solumintihar-20210402-0001.mp4"),MessageType.video, { mimetype: Mimetype.mp4, caption: 'Bazen gitmen gerek. Bazen de sonunu göremediğin hikayeyi yaşamayı bırakman gerek..'})
         await message.client.groupLeave(message.jid);
     }
     else {
@@ -23,6 +20,7 @@ Asena.addCommand({pattern: 'kickme', fromMe: true, dontAddCommandList: true, des
 Asena.addCommand({pattern: 'pp', fromMe: true, dontAddCommandList: true, desc: Lang.PP_DESC}, (async (message, match) => {    
     if (message.reply_message === false || message.reply_message.image === false) return await message.client.sendMessage(message.jid,Lang.NEED_PHOTO);
     
+    var load = await message.client.sendMessage(message.jid,Lang.PPING,MessageType.text);
     var location = await message.client.downloadAndSaveMediaMessage({
         key: {
             remoteJid: message.reply_message.jid,
@@ -32,23 +30,24 @@ Asena.addCommand({pattern: 'pp', fromMe: true, dontAddCommandList: true, desc: L
     });
 
     await message.client.updateProfilePicture(message.client.user.jid, fs.readFileSync(location));
+    await load.delete();
 }));
 
 Asena.addCommand({pattern: 'block ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.BLOCK_DESC}, (async (message, match) => {    
     if (message.reply_message !== false) {
-        await message.client.sendMessage(message.jid, fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/giphy_3.mp4"),MessageType.video, {
-            mimetype: Mimetype.mp4, caption: '@' + message.reply_message.jid.split('@')[0] + '```, ' + Lang.BLOCKED + '!```', quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
+        await message.client.sendMessage(message.jid, '@' + message.reply_message.jid.split('@')[0] + '```, ' + Lang.BLOCKED + '!```', MessageType.text, {
+            quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
         });
         await message.client.blockUser(message.reply_message.jid, "add");
     } else if (message.mention !== false) {
         message.mention.map(async user => {
-            await message.client.sendMessage(message.jid, fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/giphy_3.mp4"),MessageType.video, {
-                mimetype: Mimetype.mp4, caption: '@' + message.reply_message.jid.split('@')[0] + '```, ' + Lang.BLOCKED + '!```', previewType: 0, contextInfo: {mentionedJid: [user.replace('c.us', 's.whatsapp.net')]}
+            await message.client.sendMessage(message.jid, '@' + user.split('@')[0] + '```, ' + Lang.BLOCKED + '!```', MessageType.text, {
+                previewType: 0, contextInfo: {mentionedJid: [user.replace('c.us', 's.whatsapp.net')]}
             });
             await message.client.blockUser(user, "add");
         });
     } else if (!message.jid.includes('-')) {
-        await message.client.sendMessage(message.jid, fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/giphy_3.mp4"),MessageType.video,{caption: '*ENGELLENDİN!*'});
+        await message.client.sendMessage(message.jid, '*' + Lang.BLOCKED_UPPER + '*', MessageType.text);
         await message.client.blockUser(message.jid, "add");
     } else {
         await message.client.sendMessage(message.jid, '*' + Lang.NEED_USER + '*', MessageType.text);
