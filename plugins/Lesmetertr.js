@@ -6,7 +6,7 @@ Asena.addCommand({pattern: 'lesmeter', fromMe: true, desc: 'Share Anyone\'s Lesb
 
     if (message.reply_message === false) return await message.sendMessage('```Need Reply!```');
 
-    await message.client.sendMessage(message.jid, '```Hesaplanıyor``` ' + '@' + message.reply_message.jid.split('@')[0] + '’s ```Lesbian Meter.. 🌈```', MessageType.text, {
+    await message.client.sendMessage(message.jid, '@' + message.reply_message.jid.split('@')[0] + ' *Adlı Kişinin Lez Yüzdesi Hesaplanıyor 👩‍❤️‍👩*', MessageType.text, {
         quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
 
     });
@@ -122,6 +122,6 @@ r_text[100] = "%100";
         message.jid, 
         fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/giphy_2.mp4"),
         MessageType.video, 
-       { mimetype: Mimetype.gif, caption: `*Lez Testi Başarılı.*👩‍❤️‍💋‍👩\n*Lez Yüzdesi:*:* ${r_text[i]}` }
+        { mimetype: Mimetype.gif, caption: `Lez Yüzdesi Hesaplandı!* 👩‍❤️‍👩\n*Sonuç:* ${r_text[i]}` }
     )
 }));
