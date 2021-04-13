@@ -138,7 +138,7 @@ if (con.LANG === 'TR') {
 
             await message.client.sendMessage(
                 message.jid, 
-                fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/giphy.mp4"),
+                fs.readFileSync("/root/WhatsAsenaDuplicated2/media/gif/giphy.mp4"),
                 MessageType.video, 
                 { mimetype: Mimetype.gif, caption: `*Gay Yüzdesi Hesaplandı!* 🏳️‍🌈\n*Sonuç:* ${r_text[i]}` }
             )
@@ -264,7 +264,7 @@ if (con.LANG === 'TR') {
 
             await message.client.sendMessage(
                 message.jid, 
-                fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/giphy.mp4"),
+                fs.readFileSync("/root/WhatsAsenaDuplicated2/media/gif/giphy.mp4"),
                 MessageType.video, 
                 { mimetype: Mimetype.gif, caption: `*Gay Yüzdesi Hesaplandı!* 🏳️‍🌈\n*Sonuç:* ${r_text[i]}` }
             )
