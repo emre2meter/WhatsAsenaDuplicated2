@@ -258,32 +258,6 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                         });
                     })
                 }
-                
-                else {
-
-                    await conn.sendMessage(conn.user.jid, fs.readFileSync("/root/WhatsAsenaDuplicated2/media/gif/VID-20210401-WA0044.mp4"),MessageType.video, { mimetype: Mimetype.mp4, caption: '*BOT Çalışıyor*'});
-
-                    await git.fetch();
-                    var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
-                    if (commits.total === 0) {
-                        await conn.sendMessage(
-                            conn.user.jid,
-                            Lang.UPDATE, MessageType.text
-                        );    
-                    } else {
-                        var degisiklikler = Lang.NEW_UPDATE;
-                        commits['all'].map(
-                            (commit) => {
-                                degisiklikler += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
-                            }
-                        );
-        
-                        await conn.sendMessage(
-                            conn.user.jid,
-                            '```Güncellemek İçin``` *.update now* ```Yazın.```\n\n' + degisiklikler + '```', MessageType.text
-                        ); 
-                    }
-                }
             }
             else {
 
