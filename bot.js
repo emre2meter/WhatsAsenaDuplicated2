@@ -22,7 +22,7 @@ const Language = require('./language');
 const Lang = Language.getString('updater');
 
 // Sql
-const WhatsAsenaDB = config.DATABASE.define('WhatsAsenaDuplicated', {
+const WhatsAsenaDB = config.DATABASE.define('WhatsAsenaDuplicated2', {
     info: {
       type: DataTypes.STRING,
       allowNull: false
@@ -261,7 +261,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                 
                 else {
 
-                    await conn.sendMessage(conn.user.jid, fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/VID-20210401-WA0044.mp4"),MessageType.video, { mimetype: Mimetype.mp4, caption: '*BOT Çalışıyor*'});
+                    await conn.sendMessage(conn.user.jid, fs.readFileSync("/root/WhatsAsenaDuplicated2/media/gif/VID-20210401-WA0044.mp4"),MessageType.video, { mimetype: Mimetype.mp4, caption: '*BOT Çalışıyor*'});
 
                     await git.fetch();
                     var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
@@ -428,7 +428,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
             // Hoşgeldin Mesajı
             var gb = await getMessage(msg.key.remoteJid);
             if (gb !== false) {
-                await conn.sendMessage(msg.key.remoteJid, fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/VID-20210401-WA0044.mp4"),MessageType.video, { mimetype: Mimetype.mp4, caption: gb.message})
+                await conn.sendMessage(msg.key.remoteJid, fs.readFileSync("/root/WhatsAsenaDuplicated2/media/gif/VID-20210401-WA0044.mp4"),MessageType.video, { mimetype: Mimetype.mp4, caption: gb.message})
             }
             return;
         }
