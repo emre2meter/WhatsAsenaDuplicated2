@@ -76,7 +76,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
     }
 }));
 
-Asena.addCommand({on: 'text', fromMe: true, deleteCommand: false}, (async (message, match) => {
+Asena.addCommand({pattern: 'noafk', fromMe: true, deleteCommand: false}, (async (message, match) => {
     if (AFK.isAfk && !message.id.startsWith('3EB0')) {
         AFK.lastseen = 0;
         AFK.reason = false;
